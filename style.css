@@ -548,7 +548,7 @@ section .squares-block .block-and-btn .block p {
 		position: fixed;
 		display: flex;
 		flex-direction: column;
-		padding: 2em 1em;
+		padding: 0;
 		width: 100%;
 		top: 75px;
 		left: -100%;
@@ -560,6 +560,7 @@ section .squares-block .block-and-btn .block p {
 	}
 	.responsive-show-menu {
 		width: 100%;
+		padding: 0;
 		left: 0px;
 		transition: left 0.8s ease-in-out;
 	}
