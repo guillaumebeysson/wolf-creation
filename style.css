@@ -111,6 +111,7 @@ section .head-section {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100px;
+	margin: 0 10px;
 }
 h2 {
 	text-transform: uppercase;
