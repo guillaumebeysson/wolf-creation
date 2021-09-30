@@ -360,7 +360,7 @@ section .squares-block .block-and-btn .block p {
 	content: "";
 	position: absolute;
 	left: 27px;
-	top: 187px;
+	top: 185px;
 	width: 0;
 	height: 0;
 	border-top: 13px solid transparent;
@@ -430,8 +430,8 @@ section .squares-block .block-and-btn .block p {
 	text-align: center;
 	vertical-align: middle;
 	height: 60px;
-	background-color: #2e2e2e;
-	color: #fafafa;
+	background-color: #fafafa;
+	color: #2a2a2a;
 }
 #black-part p {
 	padding-top: 20px;
@@ -545,7 +545,7 @@ section .squares-block .block-and-btn .block p {
 		transform: translateY(0) rotateZ(-45deg);
 	}
 	.right-part-line-bar {
-		position: fixed;
+		position: absolute;
 		display: flex;
 		flex-direction: column;
 		padding: 0;
