@@ -183,8 +183,8 @@ section .squares-block .block-and-btn .block::before {
 	right: 100px;
 	width: 200px;
 	height: 150%;
-	background: linear-gradient(#00ccff, #01468c);
-	animation: animate 8s linear infinite;
+	background: linear-gradient(#01468c, #01468c);
+	animation: animate 6s linear infinite;
 }
 section .squares-block .block-and-btn .block::after {
 	content: "";
@@ -286,8 +286,6 @@ section .squares-block .block-and-btn .block p {
 #section5 {
 	background-color: #fafafa;
 	padding: 100px 0;
-}
-#section5 .head-section {
 }
 #section5 #team {
 	margin-top: 100px;
@@ -613,7 +611,7 @@ section .squares-block .block-and-btn .block p {
 		right: 50px;
 		width: 200px;
 		height: 150%;
-		background: linear-gradient(#00ccff, #01468c);
+		background: linear-gradient(#01468c, #01468c);
 		animation: animate 8s linear infinite;
 	}
 }
