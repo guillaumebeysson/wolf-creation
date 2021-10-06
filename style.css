@@ -164,31 +164,59 @@ section .squares-block .block-and-btn button:hover {
 	color: #fafafa;
 }
 section .squares-block .block-and-btn .block {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border: solid 3px #01468c;
+	/* border: solid 3px #01468c; */
 	padding: 30px;
 	width: 400px;
 	height: 400px;
 	text-align: center;
 	background-color: #fafafa;
 	margin-bottom: 20px;
+	overflow: hidden;
+}
+section .squares-block .block-and-btn .block::before {
+	content: "";
+	position: absolute;
+	right: 100px;
+	width: 200px;
+	height: 150%;
+	background: linear-gradient(#00ccff, #01468c);
+	animation: animate 8s linear infinite;
+}
+section .squares-block .block-and-btn .block::after {
+	content: "";
+	position: absolute;
+	inset: 4px;
+	background: #fafafa;
+}
+@keyframes animate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 section .squares-block .block-and-btn .block:hover {
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 section .squares-block .block-and-btn .block img {
+	z-index: 3;
 	width: 150px;
 	height: 150px;
 	margin: 0 auto;
 }
 section .squares-block .block-and-btn .block h4 {
+	z-index: 3;
 	margin: 20px;
 	font-size: x-large;
 	font-weight: normal;
 }
 section .squares-block .block-and-btn .block p {
+	z-index: 3;
 	color: #6f6f6f;
 }
 /************************* SECTION 3 ***********************************/
@@ -464,7 +492,7 @@ section .squares-block .block-and-btn .block p {
 		margin-bottom: 10px;
 	}
 	section .squares-block .block-and-btn .block {
-		width: 100%;
+		width: 400px;
 		height: auto;
 	}
 	#section3 h5 {
@@ -564,5 +592,28 @@ section .squares-block .block-and-btn .block p {
 		padding: 0;
 		left: 0px;
 		transition: left 0.8s ease-in-out;
+	}
+}
+@media screen and (max-width: 768px) {
+	section .squares-block .block-and-btn .block {
+		width: 300px;
+		height: 300px;
+	}
+	section .squares-block .block-and-btn .block img {
+		width: 80px;
+		height: 80px;
+		margin-top: 10px;
+	}
+	section .squares-block .block-and-btn .block h4 {
+		margin: 10px;
+	}
+	section .squares-block .block-and-btn .block::before {
+		content: "";
+		position: absolute;
+		right: 50px;
+		width: 200px;
+		height: 150%;
+		background: linear-gradient(#00ccff, #01468c);
+		animation: animate 8s linear infinite;
 	}
 }
